@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Christian Farris Portfolio - Graphic Design</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Graphic Design</h1>
+    </header>
+    <nav>
+        <div class="handle">Menu</div>
+        <ul class="showing">
+            <a href="index.html"><li>Home</li></a>
+            <a href="design.html"><li>Graphic Design</li></a>
+            <a href="#"><li>Computer Science</li></a>
+            <a href="#"><li>Contact</li></a>
+        </ul>
+        
+    </nav>
+    <section>
+        <img class="large-image" src="images/design/IMPACT.jpg">
+        <img class="large-image" src="images/design/JPEG.jpg">
+        <img class="large-image" src="images/design/Revival.jpg">
+        <img class="large-image" src="images/design/wordsbroken.png">
+        <p>Text about GFX.</p>
+    </section>
+    <script>
+        $('.handle').on('click', function(){
+           $('nav ul').toggleClass('showing'); 
+        });
+    </script>
+</body>    
+</html>

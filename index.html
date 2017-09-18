@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Christian Farris Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Christian Farris' Website</h1>
+    </header>
+    <nav>
+        <div class="handle">Menu</div>
+        <ul class="showing">
+            <a href="index.html"><li>Home</li></a>
+            <a href="design.html"><li>Graphic Design</li></a>
+            <a href="#"><li>Computer Science</li></a>
+            <a href="#"><li>Contact</li></a>
+        </ul>
+        
+    </nav>
+    <section>
+        <img class="large-image" src="images/me.jpg">
+        <p>My name is Christian Farris. I am currently a sophomore at the University of Wisconsin - Madison. I am majoring in Computer Science along with receiving certificates for Digital Studies and Graphic Design. This is my portfolio website that showcases my personal projects in the field of computer science and graphic design. </p>
+    </section>
+    <script>
+        $('.handle').on('click', function(){
+           $('nav ul').toggleClass('showing'); 
+        });
+    </script>
+</body>    
+</html>
