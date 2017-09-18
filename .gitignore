@@ -1,4 +1,3 @@
-._main.*
-._design.*
-._index.*
-.gitignore.*
+._main.css
+._design.html
+._index.html
