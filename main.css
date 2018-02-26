@@ -7,11 +7,8 @@ body{
     font-family: 'Lato', sans-serif;
     
 }
-h3{
-    text-align: center;
-}
 p{
-    text-align: center;
+    text-align: left;
 }
 header{
     background: #303030;
@@ -73,9 +70,9 @@ section img{
 }
 .design-images{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%; 
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 98%; 
     height: auto;
     padding:5px;
 }
@@ -105,4 +102,23 @@ section img{
     .handle{
         display: block;
     }
+}
+.twoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* fraction*/
+  background: #d5d5d5;
+  padding: 10px;    
+}
+
+.threeContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* fraction*/
+  background: #d5d5d5;
+  padding: 10px;
+}
+.largeText{
+    font-size: 1.15em;
+}
+.githubText{
+    font-size: 1em;
 }

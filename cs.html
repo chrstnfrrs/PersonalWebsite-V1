@@ -25,7 +25,103 @@
     <section>
         <p><a href="http://github.com/farrischristian">My Github</a> showcases three personal projects on it currently. The first is a sudoku app that features a recursive backtracking algorithm to solve puzzles. The second is a tic-tac-toe app that features a player versus player and basic AI gamemodes (Advanced AI coming soon!). The third is the website you are currently on!</p>
         
-        <h3><a href="http://github.com/farrischristian">Check out my Github!</a></h3>
+        <h2>Sudoku Java Program</h2>
+        
+        <h3>Classes</h3>
+        
+         <ul class="largeText">
+            <li>Cell.java</li>
+            <li>GameApp.java</li>
+            <li>Grid.java</li>
+         </ul>
+         
+        
+         <h3>Cell</h3>
+        
+            <h4>Instance Variables</h4>
+        
+                <ul>
+
+                    <li>int row</li>
+                    <li>int col</li>
+                    <li>int value</li>
+                    <li>List &lt;Integer&gt; possibleValues</li>
+
+                </ul>
+        
+            <h4>Methods</h4>
+        
+                 <ul>
+
+                     <li>public void addPossibleValue(int num)</li>
+                     <li>public int removePossibleValue(int num)</li>
+                     <li>public void emptyPossibleValues()</li>
+                     <li>public boolean containsPossibleValue(int num)</li>
+                     <li>public void printPossibilities()</li>
+                     <li>public String toString()</li>
+
+                 </ul>
+        
+         <h3>GameApp</h3>
+        
+            <h4>Instance Variables</h4>
+        
+                <ul>
+
+                    <li>Grid grid</li>
+                    <li>Scanner scnr</li>
+
+                </ul>
+        
+            <h4>Methods</h4>
+
+                <ul>
+
+                    <li>public static void main(String[] args)</li>
+                    <li>private static void addValues()</li>
+                    <li>private static void changeValues()</li>
+                    <li>public static void resetValue()</li>
+                    <li>private static void printPossibilities()</li>
+                    <li>private static int getValueLoop(String prompt)</li>
+                    <li>private static boolean checkVal(int x)</li>
+                    <li>public static void reset()</li>
+
+                </ul>
+        
+         <h3>Grid</h3>
+        
+             <h4>Instance Variables</h4>
+
+                 <ul>
+
+                    <li>Cell[][] grid</li>
+
+                 </ul>
+
+             <h4>Methods</h4>
+
+                 <ul>
+
+                     <li>public Grid()</li>
+                     <li>public void printGrid()</li>
+                     <li>public void addValueToGrid(int row, int col, int value)</li>
+                     <li>private String findValue(int row, int col, int value)</li>
+                     <li>private void removePossibleValues(int row, int col, int value)</li>
+                     <li>private void addPossibleValues(int row, int col, int value)</li>
+                     <li>public void changeValueInGrid(int row, int col, int value)</li>
+                     <li>public void resetValueInGrid(int row, int col)</li>
+                     <li>public void printPossibilities(int row, int col)</li>
+                     <li>private static Cell[] nonHorizOrVertValues(int row, int col, Cell[] arr)</li>
+                     <li>public boolean backTrackingAlgo(int row, int col)</li>
+                     <li>public static boolean isValid(int row, int col, int value)</li>
+                     <li>private static int getNextRow(int row, int col)</li>
+                     <li>private static int getNextCol(int col)</li>
+                     <li>public static void gridReset()</li>
+                     <li>public void emptyPossibleValues()</li>
+
+                 </ul>
+        
+        <p class = "githubText"><a href="http://github.com/farrischristian">Check out my Github!</a></p>
     </section>
     <script>
         $('.handle').on('click', function(){
