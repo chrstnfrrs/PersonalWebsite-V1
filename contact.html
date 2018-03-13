@@ -1,39 +1,54 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Christian Farris Portfolio - Graphic Design</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
-<body>
-    <header>
-        <h1>Contact</h1>
-    </header>
-    <nav>
-        <div class="handle">Menu</div>
-        <ul class="showing">
-            <a href="index.html"><li>Home</li></a>
-            <a href="design.html"><li>Graphic Design</li></a>
-            <a href="cs.html"><li>Computer Science</li></a>
-            <a href="contact.html"><li>Contact</li></a>
-        </ul>
-        
-    </nav>
-    <section>
-        <p class="links"><a href="https://github.com/farrischristian/">My Github!</a></p>
-        <p class="links"><a href="http://be.net/ChristianFarris">My Behance!</a></p>
-        <p class="links"><a href="mailto:cfarris@wisc.edu">Email Me!</a></p>
-    </section>
-    <script>
-        $('.handle').on('click', function(){
-           $('nav ul').toggleClass('showing'); 
-        });
-    </script>
-    <p>Christian Farris</p>
-    
-    <p></p>
-</body>    
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+        <header>
+            <h1>Contact</h1>
+        </header>
+        <nav>
+            <div class="handle">Menu</div>
+            <ul class="show">
+                <a href="index.html"><li>Home</li></a>
+                <a href="design.html"><li>Graphic Design</li></a>
+                <a href="cs.html"><li>Computer Science</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </head>
+    <body>
+        <section>
+            <p class="links"><a href="https://github.com/farrischristian/"><img class="logos"src="images/logos/github_logo.svg"/> My Github!</a></p>
+            <p class="links"><a href="http://be.net/ChristianFarris"><img class="logos" src="images/logos/Behance_logo.svg"/>My Behance!</a></p>
+            <p class="links"><a href="mailto:cfarris@wisc.edu">Email Me!</a></p>
+        </section>
+        <script>
+            $('.handle').on('click', function(){
+                $('nav ul').toggleClass('showing'); 
+            });
+        </script>
+    </body> 
+    <div id="wrapper">
+    </div>
+    <div id="footer">
+        <a href="https://github.com/farrischristian"><img class="footerLogos" src="images/logos/github_logo.svg"/></a>
+        <span class="bars">|</span>
+        <a href="http://be.net/ChristianFarris"><img class="footerLogos" src="images/logos/Behance_logo.svg"/></a>
+        <span class="bars">|</span>
+        <a href=""><img class="footerLogos" src="images/logos/twitter_logo.svg"/></a>
+        <span class="bars">|</span>
+        <a href=""><img class="footerLogos" src="images/logos/instagram_logo.svg"/></a>
+        <span class="bars">|</span>
+        <a href=""><img class="footerLogos" src="images/logos/youtube_logo.svg"/></a>
+        <span class="bars">|</span>
+        <a href=""><img class="footerLogos" src="images/logos/Spotify_logo.svg"/></a>
+        <span class="bars">|</span>
+        <a href=""><img class="footerLogos" src="images/logos/soundcloud_logo.svg"/></a>
+    </div>
 </html>

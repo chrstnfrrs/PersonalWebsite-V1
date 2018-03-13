@@ -1,19 +1,36 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
 html{
     background-color: #d5d5d5;
 }
 body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
-    
+    background-color:#d5d5d5;
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+}
+h4{
+    font-size: 1.25em;
 }
 p{
     text-align: left;
+    font-size: 16px;
+}
+a:hover{
+    color: #303030;
+    text-decoration: none;
 }
 header{
-    background: #303030;
+    background-color: #303030;
     width: 100%;
-    padding: 40px 0;
+    padding: 5px 0;
     color: #d5d5d5;
     text-align: center;
 }
@@ -21,19 +38,33 @@ a{
     text-decoration: none;
     color: inherit;
 }
+body section ul li {
+    background-color: #eee
+    color: #444;
+    padding: 1px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
 .links {
-    background-color: #e5e5e5;
+    background-color: #f5f5f5;
     display: table; 
     margin: 0px auto 0px auto; 
     padding:5px;
     font-size:20px;
+    color: #303030;
+    display: inline-block;
 }
 .links:hover { 
-    background-color: #c5c5c5;
     display: table; /* keep the background color wrapped tight */
     margin: 0px auto 0px auto; /* keep the table centered */
     padding:5px;
     font-size:20px;
+    display: inline-block;
+    color: #303030;
 }
 nav ul{
     background-color: #505050;
@@ -55,26 +86,46 @@ nav ul li{
 nav ul li:hover{
     background-color: #404040;
 }
+nav a:hover{
+    color:#e5e5e5;
+}
 section{
     line-height: 1.5em;
     font-size: 0.9em;
-    padding: 40px;
     width: 75%;
     margin: 0 auto;
-    background-color: #e5e5e5;
+    margin-bottom: 100px;
+    background-color: #f5f5f5;
     color: #303030;
+    padding: 25px;
+    overflow: inherit;
 }
 section img{
     width: 100%;
     height: 100%;
 }
-.design-images{
-    display: block;
-    margin-left: 5px;
-    margin-right: 5px;
-    max-width: 98%; 
+.main-image{
+    margin-bottom: 20px;
+}
+.design-images-6{
+    display: inline;
+    max-width: 100%; 
     height: auto;
-    padding:5px;
+    text-align: center;
+    padding-bottom: 15px;    
+}
+.design-images-12{
+    display: inline;
+    max-width: 100%; 
+    height: auto;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#poster{
+    max-height: 500px;
+    width: auto
 }
 .handle{
     width: 100%;
@@ -92,6 +143,7 @@ section img{
     }
     .showing{
         max-height: 20em;
+        display: none;
     }
     nav ul li{
         box-sizing: border-box;
@@ -103,22 +155,159 @@ section img{
         display: block;
     }
 }
+.show{
+    display: inline;
+}
+.singlePortraitDesign {
+    background: #d5d5d5;
+    padding-top: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
 .twoContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* fraction*/
-  background: #d5d5d5;
-  padding: 10px;    
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* fraction*/
+    background: #d5d5d5;
+    padding-top: 10px;
+    padding-right:12px;
+    padding-left: 12px;
+    padding-bottom: 10px;
 }
 
 .threeContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* fraction*/
-  background: #d5d5d5;
-  padding: 10px;
-}
-.largeText{
-    font-size: 1.15em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* fraction*/
+    background: #d5d5d5;
+    padding: 12px;
 }
 .githubText{
-    font-size: 1em;
+    margin-top: 20px;
+    color:#000;
+    font-size: 40px;
+    text-align: center;
 }
+.logos{
+    max-height: 40px;
+    height: auto;
+    width: auto;
+    padding-bottom: 10px;
+}
+.footerLogos{
+    max-height: 20px;
+    max-width: 20px;
+    height: auto;
+    width: auto;
+    margin-bottom: 5px;
+    display: inline;
+} 
+#wrapper {
+    /*height:100%;*/   /*you need to comment this height*/
+    margin: 0 auto;
+    min-height: 100%;
+    min-height: 15px;  /* only for Demo purposes */
+    padding-bottom: 15px;
+    width: 985px;
+    position: relative;  /*and you need to add this */
+}
+/*
+footer
+    background: #d5d5d5;
+    border-top: 1px solid #a0a0a0;
+    color: #303030;
+    max-height: 30px;
+    width: 100%;
+    position: relative;  use relative position
+    text-align: center;
+*/
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #505050;
+    color: white;
+    text-align: center;
+    height: 30px;
+    border-top: 1px solid #000;
+    opacity: .5;
+}
+#footer:hover{
+    opacity:1;
+}
+.bars{
+    font-size: 20px;
+    color:#000; 
+    display: inline-block;
+    max-width: 20px;
+}
+.centerText{
+    text-align:center;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: solid;
+    border-color: #505050;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    height:auto;
+    overflow: auto;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border: solid;
+    border-color: #505050;
+}
+
+.miniAccordion {
+    color: #444;
+    cursor: pointer;
+    padding: 1px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.1s;
+    margin-bottom: 3px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .miniAccordion:hover {
+    background-color: #eee;
+    border:solid;
+    border-color: #505050;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.miniPanel {
+    height:auto;
+    overflow: auto;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    margin-bottom:10px;
+    
+}
+
+.embeddedText{
+    height:40px;
+    text-align: left;
+}
+

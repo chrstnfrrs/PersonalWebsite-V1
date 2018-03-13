@@ -1,45 +1,153 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Christian Farris Portfolio - Graphic Design</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
-<body>
-    <header>
-        <h1>Computer Science</h1>
-    </header>
-    <nav>
-        <div class="handle">Menu</div>
-        <ul class="showing">
-            <a href="index.html"><li>Home</li></a>
-            <a href="design.html"><li>Graphic Design</li></a>
-            <a href="cs.html"><li>Computer Science</li></a>
-            <a href="contact.html"><li>Contact</li></a>
-        </ul>
-        
-    </nav>
-    <section>
-        <p><a href="http://github.com/farrischristian">My Github</a> showcases three personal projects on it currently. The first is a sudoku app that features a recursive backtracking algorithm to solve puzzles. The second is a tic-tac-toe app that features a player versus player and basic AI gamemodes (Advanced AI coming soon!). The third is the website you are currently on!</p>
-        
-        <h2>Sudoku Java Program</h2>
-        
-        <h3>Classes</h3>
-        
-         <ul class="largeText">
-            <li>Cell.java</li>
-            <li>GameApp.java</li>
-            <li>Grid.java</li>
-         </ul>
-         
-        
-         <h3>Cell</h3>
-        
-            <h4>Instance Variables</h4>
-        
+    <head>
+        <meta charset="UTF-8">
+        <title>Computer Science</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <header>
+            <h1>Computer Science</h1>
+        </header>
+        <nav>
+            <div class="handle">Menu</div>
+            <ul class="show">
+                <a href="index.html"><li>Home</li></a>
+                <a href="design.html"><li>Graphic Design</li></a>
+                <a href="cs.html"><li>Computer Science</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+
+        </nav>
+    </head>
+    <body>
+        <section>
+            <p><a href="http://github.com/farrischristian">My Github</a> showcases three personal projects on it currently. The first is a sudoku app that features a recursive backtracking algorithm to solve puzzles. The second is a tic-tac-toe app that features a player versus player and basic AI gamemodes (Advanced AI coming soon!). The third is the website you are currently on!</p>
+
+
+
+
+
+
+
+            <h2>Sudoku Java Program</h2>
+
+            <h3>Classes</h3>
+
+            <button class="accordion">GameApp</button>
+            <div class="panel">
+                <h4>Instance Variables</h4>
+
+                <ul>
+
+                    <li>Grid grid</li>
+                    <li>Scanner scnr</li>
+
+                </ul>
+
+                <h4>Methods</h4>
+
+                <ul>
+
+                    <div class="miniAccordion"><li>public static void main(String[] args)</li></div>
+                    <div class="miniPanel">This is the main class that executes the program.</div>
+
+                    <div class="miniAccordion"> <li>private static void addValues()</li></div>
+                    <div class="miniPanel">Prompts user to get user input to add values to grid.</div>
+
+                    <div class="miniAccordion"><li>private static void changeValues()</li></div>
+                    <div class="miniPanel">Prompts user to get user input to change values in grid.</div>
+
+                    <div class="miniAccordion"><li>public static void resetValue()</li></div>
+                    <div class="miniPanel">Prompts user to get user input to reset value in grid.</div>
+
+                    <div class="miniAccordion"><li>private static void printPossibilities()</li></div>
+                    <div class="miniPanel">Prompts user to get user input to print possible values for cell in grid.</div>
+
+                    <div class="miniAccordion"><li>private static int getValueLoop(String prompt)</li></div>
+                    <div class="miniPanel">Gets user input, checks if valid type.</div>
+
+                    <div class="miniAccordion"><li>private static boolean checkVal(int x)</li></div>
+                    <div class="miniPanel">Checks if user input is within bounds.</div>
+
+                    <div class="miniAccordion"><li>public static void reset()</li></div>
+                    <div class="miniPanel">Prompts user if sure they want to reset grid, if sure calls method to resets grid.</div>
+
+                </ul>
+            </div>
+
+            <button class="accordion">Grid</button>
+            <div class="panel">
+                <h4>Instance Variables</h4>
+
+                <ul>
+
+                    <li>Cell[][] grid</li>
+
+                </ul>
+
+                <h4>Methods</h4>
+
+                <ul>
+
+                    <div class="miniAccordion"><li>public Grid()</li></div>
+                    <div class="miniPanel">Constructor to create a Grid object.</div>
+
+                    <div class="miniAccordion"><li>public void printGrid()</li></div>
+                    <div class="miniPanel">Prints out values held by cells in the grid.</div>
+
+                    <div class="miniAccordion"><li>public void addValueToGrid(int row, int col, int value)</li></div>
+                    <div class="miniPanel">Adds value to grid at row, col.</div>
+
+                    <div class="miniAccordion"><li>private String findValue(int row, int col, int value)</li></div>
+                    <div class="miniPanel">Checks to see if value is in the row, col, or 3 x 3 square.</div>
+
+                    <div class="miniAccordion"><li>private void removePossibleValues(int row, int col, int value)</li></div>
+                    <div class="miniPanel">Removes possible values in possible arrays for cells affected by changes to cell at row, col.</div>
+
+                    <div class="miniAccordion"><li>private void addPossibleValues(int row, int col, int value)</li></div>
+                    <div class="miniPanel">Add possible values to possible arrays for cells affected by row,col.</div>
+
+                    <div class="miniAccordion"><li>public void changeValueInGrid(int row, int col, int value)</li></div>
+                    <div class="miniPanel">Changes value in grid.</div>
+
+                    <div class="miniAccordion"><li>public void resetValueInGrid(int row, int col)</li></div>
+                    <div class="miniPanel">Used to reset a cell in the grid to 0.</div>
+
+                    <div class="miniAccordion"><li>public void printPossibilities(int row, int col)</li></div>
+                    <div class="miniPanel">Prints possible values for cell at row, col.</div>
+
+                    <div class="miniAccordion"><li>private static Cell[] nonHorizOrVertValues(int row, int col, Cell[] arr)</li></div>
+                    <div class="miniPanel">Returns an array of cells in 3 x 3 square that are not horizontal or vertical to the cell at row, col.</div>
+
+                    <div class="miniAccordion"><li>public boolean backTrackingAlgo(int row, int col)</li></div>
+                    <div class="miniPanel">Depth first recursive backtracking algorithm to solve sudoku puzzles.</div>
+
+                    <div class="miniAccordion"><li>public static boolean isValid(int row, int col, int value)</li></div>
+                    <div class="miniPanel">Checks if the value is valid for the potential cell in grid at row, col.</div>
+
+                    <div class="miniAccordion"><li>private static int getNextRow(int row, int col)</li></div>
+                    <div class="miniPanel">Increments col. If col is greater than the largest possible value, row is incremented. If row is greater than the largest possible value, value-1 is returned to indicate that the puzzle has been solved. Returns variable row.</div>
+
+                    <div class="miniAccordion"><li>private static int getNextCol(int col)</li></div>
+                    <div class="miniPanel">Increments col. If col is greater than the largest possible value, col is reset to 0. Returns col.</div>
+
+                    <div class="miniAccordion"><li>public static void gridReset()</li></div>
+                    <div class="miniPanel">Resets grid to empty status.</div>
+
+                    <div class="miniAccordion"><li>public void emptyPossibleValues()</li></div>
+                    <div class="miniPanel">Empties possible values for the grid.</div>
+
+                </ul>
+            </div>
+
+            <button class="accordion">Cell</button>
+            <div class="panel">
+                <h4>Instance Variables</h4>
+
                 <ul>
 
                     <li>int row</li>
@@ -48,85 +156,99 @@
                     <li>List &lt;Integer&gt; possibleValues</li>
 
                 </ul>
-        
-            <h4>Methods</h4>
-        
-                 <ul>
 
-                     <li>public void addPossibleValue(int num)</li>
-                     <li>public int removePossibleValue(int num)</li>
-                     <li>public void emptyPossibleValues()</li>
-                     <li>public boolean containsPossibleValue(int num)</li>
-                     <li>public void printPossibilities()</li>
-                     <li>public String toString()</li>
-
-                 </ul>
-        
-         <h3>GameApp</h3>
-        
-            <h4>Instance Variables</h4>
-        
-                <ul>
-
-                    <li>Grid grid</li>
-                    <li>Scanner scnr</li>
-
-                </ul>
-        
-            <h4>Methods</h4>
+                <h4>Methods</h4>
 
                 <ul>
 
-                    <li>public static void main(String[] args)</li>
-                    <li>private static void addValues()</li>
-                    <li>private static void changeValues()</li>
-                    <li>public static void resetValue()</li>
-                    <li>private static void printPossibilities()</li>
-                    <li>private static int getValueLoop(String prompt)</li>
-                    <li>private static boolean checkVal(int x)</li>
-                    <li>public static void reset()</li>
+                    <div class="miniAccordion"><li>public void addPossibleValue(int num)</li></div>
+                    <div class="miniPanel">Method adds possible values to list of possible values.</div>
+
+                    <div class="miniAccordion"><li>public int removePossibleValue(int num)</li></div>
+                    <div class="miniPanel">Method removes possible values from list of possible values.</div>
+
+                    <div class="miniAccordion"><li>public void emptyPossibleValues()</li></div>
+                    <div class="miniPanel">Empties possible values arraylist.</div>
+
+                    <div class="miniAccordion"><li>public boolean containsPossibleValue(int num)</li></div>
+                    <div class="miniPanel">Checks if list contains value.</div>
+
+                    <div class="miniAccordion"><li>public void printPossibilities()</li></div>
+                    <div class="miniPanel">Prints possible values for cell.</div>
+
+                    <div class="miniAccordion"><li>public String toString()</li></div>
+                    <div class="miniPanel">Overwrites toString method to give a more exact return value.</div>
 
                 </ul>
-        
-         <h3>Grid</h3>
-        
-             <h4>Instance Variables</h4>
+            </div>
 
-                 <ul>
 
-                    <li>Cell[][] grid</li>
 
-                 </ul>
+            <p class = "githubText"><a href="http://github.com/farrischristian">Check out my </a></p>
+            <a href="http://github.com/farrischristian"><img class="embeddedText" src="images/logos/GitHub_Text.svg" /></a>
 
-             <h4>Methods</h4>
+        </section>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
 
-                 <ul>
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
 
-                     <li>public Grid()</li>
-                     <li>public void printGrid()</li>
-                     <li>public void addValueToGrid(int row, int col, int value)</li>
-                     <li>private String findValue(int row, int col, int value)</li>
-                     <li>private void removePossibleValues(int row, int col, int value)</li>
-                     <li>private void addPossibleValues(int row, int col, int value)</li>
-                     <li>public void changeValueInGrid(int row, int col, int value)</li>
-                     <li>public void resetValueInGrid(int row, int col)</li>
-                     <li>public void printPossibilities(int row, int col)</li>
-                     <li>private static Cell[] nonHorizOrVertValues(int row, int col, Cell[] arr)</li>
-                     <li>public boolean backTrackingAlgo(int row, int col)</li>
-                     <li>public static boolean isValid(int row, int col, int value)</li>
-                     <li>private static int getNextRow(int row, int col)</li>
-                     <li>private static int getNextCol(int col)</li>
-                     <li>public static void gridReset()</li>
-                     <li>public void emptyPossibleValues()</li>
+                    /* Toggle between hiding and showing the active panel */
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+        <script>
+            var acc = document.getElementsByClassName("miniAccordion");
+            var i;
 
-                 </ul>
-        
-        <p class = "githubText"><a href="http://github.com/farrischristian">Check out my Github!</a></p>
-    </section>
-    <script>
-        $('.handle').on('click', function(){
-           $('nav ul').toggleClass('showing'); 
-        });
-    </script>
-</body>    
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
+
+                    /* Toggle between hiding and showing the active panel */
+                    var miniPanel = this.nextElementSibling;
+                    if (miniPanel.style.display === "block") {
+                        miniPanel.style.display = "none";
+                    } else {
+                        miniPanel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+        <script>
+            $('.handle').on('click', function(){
+                $('nav ul').toggleClass('showing'); 
+            });
+        </script>
+    </body>    
+    <div id="wrapper">
+    </div>
+    <div id="footer">
+        <a href="https://github.com/farrischristian"><img class="footerLogos" src="images/logos/github_logo.svg"/></a>
+        <span class="bars">|</span>
+        <a href="http://be.net/ChristianFarris"><img class="footerLogos" src="images/logos/Behance_logo.svg"/></a>
+        <span class="bars">|</span>
+        <a href=""><img class="footerLogos" src="images/logos/twitter_logo.svg"/></a>
+        <span class="bars">|</span>
+        <a href=""><img class="footerLogos" src="images/logos/instagram_logo.svg"/></a>
+        <span class="bars">|</span>
+        <a href=""><img class="footerLogos" src="images/logos/youtube_logo.svg"/></a>
+        <span class="bars">|</span>
+        <a href=""><img class="footerLogos" src="images/logos/Spotify_logo.svg"/></a>
+        <span class="bars">|</span>
+        <a href=""><img class="footerLogos" src="images/logos/soundcloud_logo.svg"/></a>
+    </div>
 </html>
