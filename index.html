@@ -10,30 +10,33 @@
         <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <header>
-            <h1>Christian Farris' Website</h1>
+            <h1>Christian Farris</h1>
         </header>
         <nav>
             <div class="handle">Menu</div>
             <ul class="show">
-                <a href="index.html"><li>Home</li></a>
+                <a href="index.html"><li class="activeNav">Home</li></a>
                 <a href="design.html"><li>Graphic Design</li></a>
                 <a href="cs.html"><li>Computer Science</li></a>
-                <a href="contact.html"><li>Contact</li></a>
+<!--                <a href="contact.html"><li>Contact</li></a>-->
             </ul>
 
         </nav>
     </head>
     <body>
+        <div class="container-fluid">
         <section>
             <img class="main-image" src="images/me.jpg">
             <p class="centerText">My name is Christian Farris. I am currently a sophomore at the University of Wisconsin - Madison. I am majoring in Computer Science along with receiving certificates for Digital Studies and Graphic Design. This is my portfolio website that showcases my personal projects in the field of computer science and graphic design. </p>
         </section>
+        </div>
         <script>
             $('.handle').on('click', function(){
                 $('nav ul').toggleClass('showing'); 
             });
         </script>
     </body>
+<!--    -->
     <div id="wrapper">
     </div>
     <div id="footer">
@@ -41,14 +44,12 @@
         <span class="bars">|</span>
         <a href="http://be.net/ChristianFarris"><img class="footerLogos" src="images/logos/Behance_logo.svg"/></a>
         <span class="bars">|</span>
-        <a href=""><img class="footerLogos" src="images/logos/twitter_logo.svg"/></a>
+        <a href="https://twitter.com/cFarrisCS"><img class="footerLogos" src="images/logos/twitter_logo.svg"/></a>
         <span class="bars">|</span>
-        <a href=""><img class="footerLogos" src="images/logos/instagram_logo.svg"/></a>
+        <a href="https://www.instagram.com/cfarris.design/"><img class="footerLogos" src="images/logos/instagram_logo.svg"/></a>
         <span class="bars">|</span>
-        <a href=""><img class="footerLogos" src="images/logos/youtube_logo.svg"/></a>
+        <a href="https://www.youtube.com/channel/UC3CbICpVLQbckdoMd-YI3HA?view_as=subscriber"><img class="footerLogos" src="images/logos/youtube_logo.svg"/></a>
         <span class="bars">|</span>
-        <a href=""><img class="footerLogos" src="images/logos/spotify_logo.svg"/></a>
-        <span class="bars">|</span>
-        <a href=""><img class="footerLogos" src="images/logos/Soundcloud_logo.svg"/></a>
+        <a href="https://soundcloud.com/farrischristian"><img class="footerLogos" src="images/logos/Soundcloud_logo.svg"/></a>
     </div>
 </html>

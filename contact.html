@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
         <header>
-            <h1>Contact</h1>
+            <h1>Christian Farris</h1>
         </header>
         <nav>
             <div class="handle">Menu</div>
@@ -18,16 +18,18 @@
                 <a href="index.html"><li>Home</li></a>
                 <a href="design.html"><li>Graphic Design</li></a>
                 <a href="cs.html"><li>Computer Science</li></a>
-                <a href="contact.html"><li>Contact</li></a>
+<!--                <a href="contact.html"><li class="activeNav">Contact</li></a>-->
             </ul>
         </nav>
     </head>
     <body>
+        <div class="container-fluid">
         <section>
-            <p class="links"><a href="https://github.com/farrischristian/"><img class="logos"src="images/logos/github_logo.svg"/> My Github!</a></p>
-            <p class="links"><a href="http://be.net/ChristianFarris"><img class="logos" src="images/logos/Behance_logo.svg"/>My Behance!</a></p>
-            <p class="links"><a href="mailto:cfarris@wisc.edu">Email Me!</a></p>
+            <p class="links"><a href="https://github.com/farrischristian/"><img class="footerLogos"src="images/logos/github_logo.svg"/> My Github!</a></p>
+            <p class="links"><a href="http://be.net/ChristianFarris"><img class="footerLogos" src="images/logos/Behance_logo.svg"/> My Behance!</a></p>
+            <p class="links">The best way to contact me is to <a href="mailto:cfarris@wisc.edu"><img class="footerLogos" src="images/logos/email.svg"/> Email Me!</a></p>
         </section>
+        </div>
         <script>
             $('.handle').on('click', function(){
                 $('nav ul').toggleClass('showing'); 
